@@ -22,11 +22,11 @@ h1 {
     word-spacing: 3px;
 }
 
-.search-btn {
+.begin-btn {
     width: 20%;
 }
 
-.search-btn:hover {
+.begin-btn:hover {
     background-color: white !important;
     color: black;
     transition: 200ms;

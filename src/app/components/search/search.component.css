@@ -1,0 +1,21 @@
+.binoculars {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.search-space {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.search-btn {
+    width: 20%;
+    margin-top: 1%;
+}
+
+.search-btn:hover {
+    background-color: white !important;
+    color: black;
+    transition: 200ms;
+}
