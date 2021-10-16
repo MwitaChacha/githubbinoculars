@@ -1,0 +1,32 @@
+.jumbotron {
+    font-family: 'Lato';
+    margin: 5% 0;
+}
+
+h1 {
+    font-family: 'DM Serif Display';
+    word-spacing: 20px;
+    letter-spacing: 7px;
+}
+
+.octocat {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.lead {
+    font-size: smaller;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+
+.search-btn {
+    width: 20%;
+}
+
+.search-btn:hover {
+    background-color: white !important;
+    color: black;
+    transition: 200ms;
+}
