@@ -1,12 +1,16 @@
+
+
+
 .binoculars {
     height: 100px;
     width: 100px;
     object-fit: cover;
+    padding-bottom: 5px;
 }
 
 .search-space {
     margin: 0 auto;
-    width: 30%;
+    width: 50%;
 }
 
 .search-btn {
