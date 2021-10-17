@@ -24,3 +24,10 @@
     color: black;
     transition: 200ms;
 }
+
+.avatar {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 70%;
+}
+

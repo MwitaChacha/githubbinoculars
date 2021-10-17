@@ -1,13 +1,41 @@
 <div class="container-fluid">
   <div class="row">
     <div class="form-group text-center col-lg-6 col-md-6 col-sm-12">
-        <img class="binoculars" src="https://icon-library.com/images/binoculars-vector-icon/binoculars-vector-icon-6.jpg" alt="" srcset="">
+      <img class="binoculars" src="https://icon-library.com/images/binoculars-vector-icon/binoculars-vector-icon-6.jpg"
+        alt="" srcset="">
       <form>
         <div>
           <input class="search-space form-control" placeholder="GitHub Username" autocompletetype="text">
           <button class="btn btn-dark search-btn" type="submit">Search</button>
         </div>
       </form>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top avatar" src="{{user.avatar_url}}" alt="Card image cap">
+            <div class="card-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-2">
+                  <h6 class="card-text mt-3">{{user.login}}</h6>
+                </div>
+                <div class="p-2"><p class="text-muted mt-3"><span>{{user.public_repos}}</span> Repositories</p></div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+      
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

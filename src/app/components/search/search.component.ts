@@ -10,9 +10,13 @@ export class SearchComponent implements OnInit {
 
   username: any;
   user: any;
+  repos: any;
   constructor(private githubService: GithubService) {
       this.githubService.getUser().then(user => {
         this.user = user;
+      })
+      this.githubService.getRepos().then(repos => {
+        this.repos = repos;
       })
    }
 

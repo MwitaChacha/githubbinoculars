@@ -15,4 +15,9 @@ export class GithubService {
     return this.httpClient.get<any[]>('https://api.github.com/users/' + this.username)
     .toPromise();
   }
+
+  getRepos(){
+    return this.httpClient.get<any[]>('https://api.github.com/users/' + this.username+'/repos')
+    .toPromise();
+  }
 }
