@@ -28,9 +28,9 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card" style="width: 18rem;">
+          <div *ngFor="let repo of repos"class="card" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
+             <a href="{{repo.html_url}}" target="_blank"> <li class="list-group-item">{{repo.name}}</li></a>
       
             </ul>
           </div>
