@@ -5,8 +5,8 @@
         alt="" srcset="">
       <form>
         <div>
-          <input class="search-space form-control" placeholder="GitHub Username" autocompletetype="text">
-          <button class="btn btn-dark search-btn" type="submit">Search</button>
+          <input class="search-space form-control" placeholder="GitHub Username" name="username" autocompletetype="text" [(ngModel)] = "username">
+          <button (click)="search()" class="btn btn-dark search-btn" type="submit">Search</button>
         </div>
       </form>
     </div>
