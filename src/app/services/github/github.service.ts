@@ -1,6 +1,7 @@
-import { User } from './../../models/user';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+
+import { User } from './../../models/user';
 import { Repo } from 'src/app/models/repo';
 
 @Injectable({
@@ -15,7 +16,7 @@ export class GithubService {
    }
 
    getUser(): Promise<User>{
-    return this.httpClient.get<User>('https://api.github.com/users/' + this.username)
+    return this.httpClient.get<User>(`https://api.github.com/users/${this.username}`)
     .toPromise();
   }
 
