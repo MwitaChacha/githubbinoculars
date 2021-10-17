@@ -1,7 +1,7 @@
 # GITHUBBINOCULARS
 
 Welcome to the GithubBinoculars website application!
-Here is the website link.
+Here is the website link: <https://mwitachacha.github.io/githubbinoculars/>
 
 ## Description
 
