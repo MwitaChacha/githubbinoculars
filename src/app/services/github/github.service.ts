@@ -20,4 +20,10 @@ export class GithubService {
     return this.httpClient.get<any[]>('https://api.github.com/users/' + this.username+'/repos')
     .toPromise();
   }
+
+  updateUsername(username: string) {
+this.username = username;
+  }
 }
+
+

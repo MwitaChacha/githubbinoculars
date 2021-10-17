@@ -1,4 +1,6 @@
-
+.container-fluid {
+    margin: 0 auto;
+}
 
 
 .binoculars {
@@ -31,3 +33,16 @@
     width: 70%;
 }
 
+
+.results-section {
+    font-family: 'Lato';
+    font-size: smaller;
+    
+}
+.card {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}

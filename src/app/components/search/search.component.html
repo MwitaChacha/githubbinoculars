@@ -10,7 +10,7 @@
         </div>
       </form>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col-lg-6 col-md-6 col-sm-12 results-section">
       <div class="row">
         <div class="col-sm-6">
           <div class="card" style="width: 18rem;">
@@ -18,9 +18,9 @@
             <div class="card-body">
               <div class="d-flex flex-row justify-content-between">
                 <div class="p-2">
-                  <h6 class="card-text mt-3">{{user.login}}</h6>
+                  <h5 class="user-name card-text mt-3"><strong>{{user.login}}</strong></h5>
                 </div>
-                <div class="p-2"><p class="text-muted mt-3"><span>{{user.public_repos}}</span> Repositories</p></div>
+                <div class="p-2"><p class="text-muted mt-4"><span>{{user.public_repos}}</span> Repositories</p></div>
 
               </div>
 
@@ -28,7 +28,9 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div *ngFor="let repo of repos"class="card" style="width: 18rem;">
+          <h6> <strong> Repositories</strong></h6>
+          <div *ngFor="let repo of repos" class="card" style="width: 18rem;">
+    
             <ul class="list-group list-group-flush">
              <a href="{{repo.html_url}}" target="_blank"> <li class="list-group-item">{{repo.name}}</li></a>
       

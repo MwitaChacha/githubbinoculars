@@ -12,12 +12,7 @@ export class SearchComponent implements OnInit {
   user: any;
   repos: any;
   constructor(private githubService: GithubService) {
-      this.githubService.getUser().then(user => {
-        this.user = user;
-      })
-      this.githubService.getRepos().then(repos => {
-        this.repos = repos;
-      })
+      
    }
 
   ngOnInit(): void {
@@ -25,6 +20,14 @@ export class SearchComponent implements OnInit {
 
    search(){
 
+    this.githubService.updateUsername(this.username);
+
+    this.githubService.getUser().then(user => {
+      this.user = user;
+    })
+    this.githubService.getRepos().then(repos => {
+      this.repos = repos;
+    })
    }
   
 }
