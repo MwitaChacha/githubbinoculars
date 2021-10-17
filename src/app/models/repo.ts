@@ -4,6 +4,6 @@ export class Repo {
     id!: string;
     name!: string;
     description!: string;
-    url!: string;
+    html_url!: string;
     created_at!: string;
 }

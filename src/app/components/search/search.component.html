@@ -30,7 +30,7 @@
           <h6> <strong> Repositories</strong></h6>
           <div *ngFor="let repo of repos" class="card card-body" style="width: 18rem;">
     
-             <a href="{{repo.url}}" target="_blank">
+             <a href="{{repo.html_url}}" target="_blank">
               {{repo.name}}</a>
 
               <p>{{ repo.description }}</p>
