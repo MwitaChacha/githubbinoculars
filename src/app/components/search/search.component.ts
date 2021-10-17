@@ -1,3 +1,4 @@
+import { User } from './../../models/user';
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from 'src/app/services/github/github.service';
 
@@ -9,7 +10,7 @@ import { GithubService } from 'src/app/services/github/github.service';
 export class SearchComponent implements OnInit {
 
   username: any;
-  user: any;
+  user!: User;
   repos: any;
   constructor(private githubService: GithubService) {
       
