@@ -1,6 +1,7 @@
 import { User } from './../../models/user';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { Repo } from 'src/app/models/repo';
 
 @Injectable({
   providedIn: 'root'
@@ -18,8 +19,8 @@ export class GithubService {
     .toPromise();
   }
 
-  getRepos(){
-    return this.httpClient.get<any[]>('https://api.github.com/users/' + this.username+'/repos')
+  getRepos(): Promise<Repo[]>{
+    return this.httpClient.get<Repo[]>('https://api.github.com/users/' + this.username+'/repos')
     .toPromise();
   }
 
