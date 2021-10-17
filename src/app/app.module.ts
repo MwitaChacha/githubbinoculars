@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { SearchComponent } from './components/search/search.component';
+import { GithubService } from './services/github/github.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SearchComponent } from './components/search/search.component';
     RouterModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

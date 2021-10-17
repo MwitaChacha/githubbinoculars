@@ -6,5 +6,13 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 })
 export class GithubService {
 
-  constructor(private httpClient: HttpClient) { }
+  private username: string = "MwitaChacha";
+
+  constructor(private httpClient: HttpClient) {
+
+   }
+   getUser(){
+    return this.httpClient.get<any[]>('https://api.github.com/users/' + this.username)
+    .toPromise();
+  }
 }
